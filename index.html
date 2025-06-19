@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant TO-DO List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1><i class="fas fa-check-circle"></i> Elegant Tasks</h1>
+            <p>Organize your day with style</p>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <button id="addBtn"><i class="fas fa-plus"></i> Add</button>
+        </div>
+        
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All Tasks</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        
+        <div class="task-stats">
+            <span id="count">0</span> tasks remaining
+            <button id="clearCompleted">Clear Completed</button>
+        </div>
+        
+        <ul id="taskList"></ul>
+        
+        <div class="empty-state" id="emptyState">
+            <i class="fas fa-clipboard-list"></i>
+            <p>Your task list is empty</p>
+            <p>Add a task to get started!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
