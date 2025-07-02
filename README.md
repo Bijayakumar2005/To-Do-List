@@ -88,3 +88,7 @@ Tap-friendly larger touch targets
 Stacked layout on small screens
 
 Optimized spacing for mobile
+
+
+
+Author - Bijaya Kumar Rout
